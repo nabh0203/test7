@@ -1,0 +1,94 @@
+section{background-color: black;font-family: "Pretendard Variable";font-weight:300; color: white;}
+.text_box{width: 90%; padding: 5% 5% 0 5% ;}
+#first_box{display: flex;align-items: center;}
+#important1{font-weight: 400; font-size: 2.3rem; width: 30%;}
+#important2{width: 100%; font-size: 0.8rem;display: flex; justify-content:space-around;}
+#important3{width: 50%; font-size: 4rem;display: flex; justify-content:space-around;padding-left: 40%;font-weight: 600; text-align: center;}
+
+
+.other{text-align: center; font-size: 2rem; font-weight: 700;}
+#sub_text{font-size: 0.8rem;font-weight: 400;}
+
+
+.img_slider {
+    width: 100%;
+    background-color: #000000;
+    padding-top:7%;
+}
+.img_slider p{
+    text-align: center;
+    font-size: 0.7rem; 
+    margin-bottom: 4%;
+    font-weight: 700;
+}
+#main_img {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main_img img{
+    width:60%;
+    border: 5px solid #acacac;
+}
+
+#thumnail {
+    padding: 5%;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#thumnail #move_left{
+    width: 30%;
+    float: right;
+}
+#thumnail #move_right{
+    width: 30%;
+    float: left;
+}
+
+#photos{
+    width: 100%;
+}
+#photos li{
+    display: inline;
+}
+#photos img{
+    width: 25%;
+}
+#thumnail #photos img {
+    border: solid 5px #3d3d3d;
+}
+#thumnail #photos a:hover img {
+    border: solid 5px #ffffff;
+}
+
+/* 태블릿 */
+@media all and (min-width: 744px){
+    #important1{font-size: 4rem; width: 50%; margin-left: 5%;}
+    #important2{font-size: 1.5rem;width: 100%;}
+    #important3{font-size: 5rem;width: 50%;}
+    .other{text-align: center; font-size: 1.3rem;}
+    #sub_text{font-size: 1rem;}
+    .img_slider {padding-top:3%;}
+    .img_slider p{font-size: 2rem; margin-bottom: 5%;}
+    #thumnail #move_left{margin-top: 13%;}
+    #thumnail #move_right{margin-top: 13%;}
+    #thumnail { width:90%;padding: 5% 0 5% 0; margin-left: 5.5%;}
+    #photos{width: 90%;margin-left: 8%;}
+}
+/* PC */
+@media all and (min-width: 1024px){
+    #important1{font-size: 5rem; margin-left: 10%;}
+    #important2{font-size: 2rem;}
+    #important3{font-size: 8rem;}
+    .other{font-size: 4rem;}
+    #sub_text{font-size: 2rem;}
+    .img_slider {padding-top:7%;}
+    .img_slider p{font-size: 2rem;}
+    #thumnail #move_left{width: 50%;margin-top: 30%;}
+    #thumnail #move_right{width: 50%;margin-top: 30%;}
+    #thumnail { width:90%;padding: 5% 0 5% 0; margin-left: 5.5%;}
+    #photos{width: 90%;margin-left: 12%;}
+}
